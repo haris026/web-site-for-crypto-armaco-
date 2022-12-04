@@ -1,0 +1,1450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    position: relative;
+    width: 1920px;
+    height: 4340px;
+
+
+    background: #011224;
+}
+
+.root__header {
+    position: relative;
+
+    width: 1300px;
+    height: 77px;
+    left: 310px;
+    top: 27px;
+    display: flex;
+}
+
+.root__header__logo {
+
+    width: 147px;
+    height: 46px;
+    margin-left: 1px;
+
+
+    position: relative;
+}
+
+.root__header__navi {
+    width: 808px;
+    height: 21px;
+    margin-left: 340px;
+    margin-top: 13px;
+
+    display: flex;
+    margin-right: 4px;
+    justify-content: space-between;
+}
+
+
+
+.root__header__navi__link {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.root__header__navi__jedan {
+    color: #E93310;
+    height: 21px;
+    width: 204px;
+
+    border-radius: nullpx;
+
+
+
+}
+
+.root__header__navi__dva {
+    height: 21px;
+    width: 63px;
+
+    border-radius: nullpx;
+
+
+}
+
+.root__header__navi__tri {
+    margin-left: 27px;
+    height: 21px;
+    width: 82px;
+
+    top: 40px;
+    border-radius: nullpx;
+
+}
+
+.root__header__navi__cetiri {
+    margin-left: 27px;
+    height: 21px;
+    width: 82px;
+
+    top: 40px;
+    border-radius: nullpx;
+
+}
+
+.root__header__navi__pet {
+    height: 21px;
+    width: 52px;
+
+    top: 40px;
+    border-radius: nullpx;
+
+}
+
+.root__header__navi__sest {
+    margin-left: 16px;
+    height: 21px;
+    width: 64px;
+
+    top: 40px;
+    border-radius: nullpx;
+
+}
+
+.root__header__navi__sedam {
+    height: 21px;
+    width: 81px;
+
+    top: 40px;
+    border-radius: nullpx;
+    margin-left: 27px;
+
+
+}
+
+.root__header_navi__dropdown {
+    position: relative;
+    width: 63px;
+    height: 21px;
+    margin-left: 27px;
+}
+
+.root__header__navi__dropdown__prvi {
+    position: absolute;
+    left: -10px;
+    top: 30px;
+    width: 254px;
+    height: 0;
+    background: #1A2939;
+    z-index: 100;
+    transition: height .5s ease;
+    overflow: hidden;
+}
+
+.root__header__navi__dropdown__drugi {
+    position: absolute;
+    left: -70px;
+    top: 30px;
+    width: 254px;
+    height: 0;
+    background: #1A2939;
+    z-index: 100;
+    transition: height .5s ease;
+    overflow: hidden;
+}
+
+
+.root__header__navi__dropdown:hover .root__header__navi__dropdown__prvi {
+    height: 144px;
+}
+
+
+.root__header_navi__dropdown>.root__header__navi__link:hover+.root__header__navi__dropdown__prvi {
+    height: 144px;
+}
+
+.root__header_navi__dropdown>.root__header__navi__link:hover+.root__header__navi__dropdown__drugi {
+    height: 270px;
+}
+
+.root__header__navi__dropdown__prvi__tekst,
+.root__header__navi__dropdown__drugi__tekst {
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.root__header__navi__dropdown__prvi__vektor,
+.root__header__navi__dropdown__drugi__vektor {
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+
+
+
+.root__header__vector {
+    position: absolute;
+    width: 1300px;
+    height: 3px;
+    left: 310px;
+    top: 101px;
+}
+
+.root__firstScreen {
+    position: relative;
+    width: 1299px;
+    height: 685px;
+    left: 311px;
+    top: 58px;
+
+}
+
+.root__firstScreen__text {
+    position: relative;
+    top: 119px;
+    width: 615px;
+    height: 134px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__firstScreen__text2 {
+    position: relative;
+    width: 602px;
+    height: 102px;
+    margin-top: 139px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__firstScreen__button {
+    position: absolute;
+    width: 405px;
+    height: 90px;
+
+    top: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: #E93310;
+    box-shadow: 0px 0px 20px #E93310;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    transition: background-color .5s ease;
+
+}
+
+.root__firstScreen__button:hover {
+    border: 2px solid #e93310;
+    box-sizing: border-box;
+    -webkit-filter: drop-shadow(0 0 20px #e93310);
+    filter: drop-shadow(0 0 20px #e93310);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.root__firstScreen__btc {
+    position: absolute;
+    width: 642px;
+    height: 685px;
+    left: 657px;
+    top: 0px;
+
+    background: url(../img/Image\ bt.png);
+}
+
+.root__secondScreen {
+    position: absolute;
+    width: 1300px;
+    height: 498px;
+    left: 310px;
+    top: 920px;
+
+}
+
+.root__secondScreen__naslov {
+    position: relative;
+    width: 586px;
+    height: 67px;
+    left: 365px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__secondScreen__podnaslov {
+    position: relative;
+    width: 802px;
+    height: 68px;
+    left: 247px;
+    top: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.root__secondScreen__karte {
+    width: 100%;
+    height: 298px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.root__secondScreen__karte__prva {
+    width: 302px;
+    height: 100%;
+    background: #1A2939;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.root__secondScreen__karte__prva__bckImg {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    left: 3.31%;
+    right: 54.3%;
+    top: 64.77%;
+    bottom: -7.72%;
+
+}
+
+.root__secondScreen__karte__prva__naslov {
+
+
+    width: 262px;
+    height: 68px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #E93310;
+    margin: -78px 20px 30px 20px;
+}
+
+.root__secondScreen__karte__prva__text {
+    position: relative;
+    left: 20px;
+    width: 262px;
+    height: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.root__thirdScreen {
+    position: absolute;
+    width: 1609px;
+    height: 738px;
+    left: 310px;
+    top: 1518px;
+}
+
+.root__thirdScreen__naslov {
+    position: relative;
+    width: 615px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__secondScreen__text {
+    position: relative;
+    width: 602px;
+    height: 102px;
+    left: 0px;
+    top: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__thirdScreen__container {
+    position: relative;
+    width: 644px;
+    height: 284px;
+    left: 0px;
+
+    top: 45px;
+}
+
+.root__thirdScreen__button {
+    position: relative;
+    width: 405px;
+    height: 90px;
+
+    top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: #E93310;
+    box-shadow: 0px 0px 20px #E93310;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    transition: background-color .5s ease;
+
+}
+
+.root__thirdScreen__button:hover {
+    border: 2px solid #e93310;
+    box-sizing: border-box;
+    -webkit-filter: drop-shadow(0 0 20px #e93310);
+    filter: drop-shadow(0 0 20px #e93310);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.root__thirdScreen__container__strelica1 {
+    position: relative;
+
+
+    left: 0px;
+
+    top: 0px;
+
+
+}
+
+.root__thirdScreen__container__strelica2 {
+    position: relative;
+
+
+    left: -27px;
+
+    top: 77px;
+
+
+}
+
+.root__thirdScreen__container__strelica3 {
+    position: relative;
+
+    left: -54px;
+
+    top: 154px;
+
+}
+
+.root__thirdScreen__container__strelica4 {
+    position: relative;
+
+
+    left: -81px;
+
+    top: 230px;
+
+}
+
+.root_thirdScreen__btcSlika {
+    position: absolute;
+    width: 1218px;
+    height: 738px;
+    left: 391px;
+    top: 0px;
+
+    background: url(../img/final1\ 1.png);
+}
+
+.root__thirdScreen__lijevo {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.root__thirdScreen__lista {
+    width: 644px;
+    height: 284px;
+    margin-top: 45px;
+}
+
+.root__thirdScreen__lista li {
+    width: 644px;
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.root__thirdScreen__list li img {
+    right: 20px;
+    align-self: flex-start;
+}
+
+.root__faq {
+    position: absolute;
+    width: 1132px;
+    height: 671px;
+    left: 394px;
+    top: 2356px;
+}
+
+.root__faq__naslov {
+    position: relative;
+    top: 0px;
+    left: 269px;
+
+
+    width: 594px;
+    height: 67px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__faq__podnaslov {
+    position: relative;
+    left: 197px;
+    top: 20px;
+
+    width: 737px;
+    height: 68px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.root__faq__container {
+    position: relative;
+    width: 1132px;
+    height: 470px;
+    left: 0px;
+    top: 65px;
+
+    background: #1A2939;
+    border-radius: 5px;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 82px 82px 82px 224px;
+}
+
+.root__faq__container__prvi {
+
+    width: 1132px;
+
+
+}
+
+.root__faq__container__drugi {
+
+    width: 1132px;
+
+
+}
+
+.root__faq__container__treci {
+
+    width: 1132px;
+
+
+}
+
+.root__faq__container__cetvrti {
+
+    width: 1132px;
+    height: 100%;
+
+}
+
+.root__faq__container__prvi__pitanje {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 45px;
+
+    height: 34px;
+    margin-right: 45px;
+    margin-top: 25px;
+
+}
+
+.root__faq__container__pitanja {
+
+    width: 602px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.root__faq__container__pitanja2 {
+
+    width: 602px;
+    margin-top: -1px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.root__faq__container__pitanja3 {
+
+    width: 602px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.root__faq__container__pitanja4 {
+
+    width: 602px;
+    margin-top: -2px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.root__faq__container__plus {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.root__faq__container__plus2 {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.root__faq__container__plus3 {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.root__faq__container__cetvrti__minus {
+
+    margin-right: 8px;
+    margin-top: 7px;
+
+    border: 2px solid #FFFFFF;
+    transform: rotate(90deg);
+    height: 20.000000715255624px;
+    width: 0px;
+    left: 1087px;
+    top: 40px;
+    border-radius: 0px;
+
+}
+
+.root__faq__container__cetvrti__donji {
+    width: 1042px;
+    height: 84px;
+    background-color: aliceblue;
+    margin-left: 45px;
+    margin-top: 55px;
+    margin-bottom: 29px;
+}
+
+.root__faq__container__cetvrti__text1 {
+    position: absolute;
+    width: 510px;
+    height: 84px;
+    left: 45px;
+    top: 360px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__faq__container__cetvrti__text2 {
+    position: absolute;
+    width: 510px;
+    height: 84px;
+    left: 577px;
+    top: 360px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__vektor {
+    position: absolute;
+    top: 2638px;
+    z-index: 999;
+    left: 394px;
+    height: 1px;
+    width: 1132px;
+
+    border-radius: 0px;
+
+
+}
+
+.root__vektor2 {
+    position: absolute;
+
+    top: 2719px;
+    z-index: 999;
+    left: 394px;
+    height: 1px;
+    width: 1132px;
+
+    border-radius: 0px;
+
+}
+
+.root__vektor3 {
+    position: absolute;
+
+    top: 2801px;
+    z-index: 999;
+    left: 394px;
+    height: 1px;
+    width: 1132px;
+
+    border-radius: 0px;
+
+}
+
+.root__vektor4 {
+    margin-top: 24px;
+    margin-bottom: 30px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.root__contact {
+    position: absolute;
+    width: 1300px;
+    height: 823px;
+    left: 310px;
+    top: 3127px;
+}
+
+
+.root__contact__slika {
+    width: 607px;
+    height: 619px;
+
+    margin-top: 194px;
+}
+
+.root__contact__desniContainer {
+    position: absolute;
+    width: 625px;
+    height: 823px;
+    margin-left: 68px;
+    margin-top: 0px;
+    display: inline-block;
+
+}
+
+.root__contact__desniContainer__naslov {
+    width: 615px;
+    height: 134px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__contact__desniContainer__podnaslov {
+    width: 602px;
+    height: 102px;
+    margin-top: 20px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__contact__desniContainer__login {
+    width: 625px;
+    height: 522px;
+    margin-top: 45px;
+
+    background: #1A2939;
+    border-radius: 5px;
+}
+
+.root__contact__desniContainer__login__ime {
+    position: relative;
+    left: 57px;
+    top: 50px;
+    width: 511px;
+    height: 70px;
+    padding-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    display: flex;
+    align-items: center;
+    color: #7C7B7B;
+    background-color: #1A2939;
+    /*border */
+    border: 1px solid #FFFFFF;
+    border-right-width: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.root__contact__desniContainer__login__email {
+    position: relative;
+    left: 57px;
+    margin-top: 90px;
+
+    width: 511px;
+    height: 70px;
+    padding-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    display: flex;
+    align-items: center;
+    color: #7C7B7B;
+    background-color: #1A2939;
+    /*border */
+    border: 1px solid #FFFFFF;
+    border-right-width: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.root__contact__desniContainer__login__telefon {
+    position: relative;
+    left: 57px;
+    margin-top: 40px;
+    width: 511px;
+    height: 70px;
+    padding-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    display: flex;
+    align-items: center;
+    color: #7C7B7B;
+    background-color: #1A2939;
+    /*border */
+    border: 1px solid #FFFFFF;
+    border-right-width: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.root__contact__desniContainer__login__linija {
+    position: relative;
+    width: 340px;
+    height: 2px;
+    margin-left: 138px;
+    margin-top: 30px;
+
+}
+
+.root__contact__desniContainer__login__button {
+    position: absolute;
+    width: 405px;
+    height: 70px;
+    LEFT: 109PX;
+    top: 27px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: #E93310;
+    box-shadow: 0px 0px 20px #E93310;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    transition: background-color .5s ease;
+
+}
+
+.root__contact__desniContainer__login__button:hover {
+    border: 2px solid #e93310;
+    box-sizing: border-box;
+    -webkit-filter: drop-shadow(0 0 20px #e93310);
+    filter: drop-shadow(0 0 20px #e93310);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.root__linija {
+    position: absolute;
+    width: 1300px;
+    height: 3px;
+    left: 310px;
+    top: 4050px;
+    z-index: 999;
+}
+
+.root__footer {
+    position: absolute;
+    width: 1300px;
+    height: 210px;
+    left: 310px;
+    top: 4050px;
+}
+
+.root__footer__logo {
+    position: absolute;
+    width: 147px;
+    height: 46px;
+    left: 0px;
+    top: 48px;
+
+}
+
+.root__footer__telefon {
+    position: absolute;
+    width: 214px;
+    height: 71px;
+    left: 247px;
+    top: 48px;
+}
+
+.root__footer__telefon__slika {
+    width: 30px;
+    height: 30px;
+    left: 247px;
+    top: 48px;
+}
+
+.root__footer__telefon__broj {
+    position: absolute;
+    width: 133px;
+    height: 21px;
+    top: 5px;
+    margin-left: 58px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__footer__telefon__broj2 {
+    position: absolute;
+    top: 50px;
+    width: 156px;
+    height: 21px;
+    margin-left: 58px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__footer__email {
+    position: absolute;
+    width: 359px;
+    height: 80px;
+    left: 561px;
+    top: 48px;
+}
+
+.root__footer__email__gornji {
+    position: absolute;
+    width: 245px;
+    height: 30px;
+
+}
+
+.root__footer__email__donji {
+    position: absolute;
+    width: 359px;
+    height: 30px;
+    top: 50px;
+}
+
+.root__footer__email__gornji__slika {
+    width: 30px;
+    height: 30px;
+    top: 3px;
+}
+
+.root__footer__email__gornji__mail {
+    top: 5px;
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    left: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__footer__email__donji__slika {}
+
+.root__footer__email__donji__text {
+    position: absolute;
+    width: 309px;
+    height: 21px;
+    left: 50px;
+    top: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__footer__social {
+    position: absolute;
+    width: 100px;
+    height: 41px;
+    left: 1020px;
+    top: 48px;
+}
+
+.root__footer__social__linkedin {
+    position: absolute;
+    left: 60px;
+}
+
+.root__footer__armaco {
+    position: absolute;
+    width: 165px;
+    height: 16px;
+    left: 0px;
+    top: 175px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__thirdScreen__lijevoo {
+    position: relative;
+    width: 644px;
+    height: 284px;
+    left: 0px;
+    top: 65px;
+
+
+}
+
+.root__thirdScreen__lijevo1 {
+    position: absolute;
+    width: 644px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+}
+
+.root__thirdScreen__lijevo__strelica1 {
+    position: absolute;
+    left: 0%;
+    right: 96.58%;
+    top: 0%;
+    bottom: 60.71%;
+}
+
+.root__thirdScreen__lijevo__text1 {
+    position: absolute;
+    left: 6.52%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.root__thirdScreen__lijevo2 {
+    position: absolute;
+    width: 644px;
+    height: 56px;
+    left: 0px;
+    top: 76px;
+}
+
+.root__thirdScreen__lijevo3 {
+    position: absolute;
+    width: 644px;
+    height: 56px;
+    left: 0px;
+    top: 152px;
+}
+
+.root__thirdScreen__lijevo4 {
+    position: absolute;
+    width: 644px;
+    height: 56px;
+    left: 0px;
+    top: 228px;
+}
+
+.root__thirdScreen__lijevo__text2 {
+    position: absolute;
+    left: 6.52%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.root__thirdScreen__lijevo__text3 {
+    position: absolute;
+    left: 6.52%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.root__thirdScreen__lijevo__text4 {
+    position: absolute;
+    left: 6.52%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+#margina {
+    margin-left: -1px;
+}
